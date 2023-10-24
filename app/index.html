@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="wrapper__list">
+    <div id="character__list">
+        <div class="filter">
+            <div class="filter__input">
+                <input id="user" class="enter__name" type="text" name="character" required="required" placeholder="Enter a character name and pick a status">
+            </div>
+            <div class="filter__items">
+                <div class="item__radio">
+                    <input id="alive" type="radio" name="filter" value="alive">
+                    <label for="alive">
+                        Alive
+                    </label>
+                </div>
+                <div class="item__radio">
+                    <input id="dead" type="radio" name="filter" value="dead">
+                    <label for="dead">
+                        Dead
+                    </label>
+                </div>
+                <div class="item__radio">
+                    <input id="unknown" type="radio" name="filter" value="unknown">
+                    <label for="unknown">
+                        Unknown
+                    </label>
+                </div>
+            </div>
+            <div class="filter__button">
+                <button class="search" onclick="handlerSearch()" type="submit">
+                    Show results
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up">
+        <div class="pop-up__item">
+            <div class="pop-up__image"></div>
+            <div class="pop-up__info"></div>
+        </div>
+        <button id="close">&#10006</button>
+    </div>
+    <div class="button__list">
+    </div>
+  </div>
+  </div>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
